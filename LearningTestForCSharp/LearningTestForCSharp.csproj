@@ -60,10 +60,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Collections\DelegatesTests.cs" />
-    <Compile Include="Collections\DictionaryTests.cs" />
-    <Compile Include="Collections\LinqTests.cs" />
-    <Compile Include="Collections\ListTests.cs" />
+    <Compile Include="Tests\DelegatesTests.cs" />
+    <Compile Include="Tests\DictionaryTests.cs" />
+    <Compile Include="Tests\LinqTests.cs" />
+    <Compile Include="Tests\ListTests.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

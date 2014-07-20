@@ -2,7 +2,7 @@
 using System.Linq;
 using NUnit.Framework;
 
-namespace LearningTestForCSharp.Collections
+namespace LearningTestForCSharp.Tests
 {
     [TestFixture]
     public class DelegatesTests

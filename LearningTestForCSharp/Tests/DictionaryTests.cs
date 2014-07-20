@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using NUnit.Framework;
 
-namespace LearningTestForCSharp.Collections
+namespace LearningTestForCSharp.Tests
 {
     [TestFixture]
     public class DictionaryTests
