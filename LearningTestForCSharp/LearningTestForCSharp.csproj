@@ -60,6 +60,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Collections\DelegatesTests.cs" />
     <Compile Include="Collections\DictionaryTests.cs" />
     <Compile Include="Collections\LinqTests.cs" />
     <Compile Include="Collections\ListTests.cs" />
