@@ -24,5 +24,36 @@ namespace LearningTestForCSharp.Tests
             Assert.That(numbers.Where(lessThanTwo),
                 Is.EquivalentTo(new[] { 1 }));
         }
+
+        delegate void Operation(Logger logger);
+
+        event Operation OnOperation;
+
+        void FirstOperation(Logger logger)
+        {
+            logger.Message += "FirstOperation\n";
+        }
+
+        void SecondOperation(Logger logger)
+        {
+            logger.Message += "SecondOperation\n";
+        }
+
+        [Test]
+        public void AllDelegatesAreCalledForAnEvent()
+        {
+            var logger = new Logger();
+
+            OnOperation += FirstOperation;
+            OnOperation += SecondOperation;
+            OnOperation(logger);
+
+            Assert.That(logger.Message, Is.EqualTo("FirstOperation\nSecondOperation\n"));
+        }
+
+        class Logger
+        {
+            public string Message;
+        }
     }
 }
