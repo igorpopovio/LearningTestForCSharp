@@ -31,5 +31,13 @@ namespace LearningTestForCSharp.Tests
             Assert.That(numbers.Any(number => number % 2 == 0));
             Assert.That(numbers.All(number => number > 0));
         }
+
+        [Test]
+        public void ReferencesAreTheSame()
+        {
+            var names = new[] { "Ted", "Bob", "Amy", "Jim", "Sue", "Tom", "Liz" };
+            var sortedNames = names.OrderBy(name => name);
+            Assert.That(sortedNames, Is.EquivalentTo(names));
+        }
     }
 }
